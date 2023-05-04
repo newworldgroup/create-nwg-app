@@ -1,0 +1,23 @@
+{
+  "name": "create-nwg-app",
+  "version": "0.0.1",
+  "description": "Create a Next.js project to New World Group development standards in one command",
+  "bin": {
+    "create-nwg-app": "./dist/index.js"
+  },
+  "main": "dist/index.ts",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "author": "Aite Eboigbe <aeboigbe@newworldgroup.com>",
+  "license": "ISC",
+  "dependencies": {
+    "execa": "^7.1.1",
+    "inquirer": "^8.2.5"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.16.3",
+    "typescript": "^5.0.4"
+  }
+}
