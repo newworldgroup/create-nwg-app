@@ -2,17 +2,26 @@
   "name": "create-nwg-app",
   "version": "0.0.1",
   "description": "Create a Next.js project to New World Group development standards in one command",
+  "type": "module",
   "bin": {
-    "create-nwg-app": "./dist/index.js"
+    "create-nwg-app": "dist/index.js"
   },
-  "main": "dist/index.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "tsc && node dist/index.js"
+    "start": "node dist/index.js",
+    "dev": "ncc build ./index.ts -w -o dist/",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": " https://github.com/nohr/create-nwg-app/"
   },
   "author": "Aite Eboigbe <aeboigbe@newworldgroup.com>",
   "license": "ISC",
   "dependencies": {
-    "execa": "^7.1.1",
+    "dotenv": "^16.0.3",
     "inquirer": "^8.2.5"
   },
   "devDependencies": {

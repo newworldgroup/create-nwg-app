@@ -1,7 +1,10 @@
 /node_modules
-/dist
+dist/
+
 # misc
 .DS_Store
 
 # local env files
 .env.local
+
+/appDir
