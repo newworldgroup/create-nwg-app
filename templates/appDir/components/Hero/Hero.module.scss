@@ -1,0 +1,8 @@
+@use "../../styles/base/mixin.scss" as mixin;
+
+.container {
+  width: 100%;
+  height: 100vh;
+  border: 2px solid rgb(179, 174, 174);
+  position: relative;
+}

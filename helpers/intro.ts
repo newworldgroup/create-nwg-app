@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import packageJson from "package.json";
 
 /**
@@ -11,8 +9,10 @@ import packageJson from "package.json";
  * @todo check for updates and notify the user
  */
 export const INTRO = () => {
-  console.log(
-    `${`             ███    ███▀                                             ╟███▌     ╚█
+  console.log(message);
+};
+
+export const message = `${`             ███    ███▀                                             ╟███▌     ╚█
       ▌     ┌███▌   ███▌                                               ████      ██
      ▌      ████   ╟██▌   ██████████████████████████████████████████▌   ████      █
     ▐       ███▌   ███    ,,,,,,,,  ,,,    ,,    ,,,  ,,,,,,,,,   ╙███   ╟███      ╫▌
@@ -23,6 +23,4 @@ export const INTRO = () => {
      █▌     ╟███▄  ╙▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀    ╟██▌   ████      ]
      ╫█      ████                                               ╔███   ▐███       ╫
       ██     ╙████                                             ╓███   ┌███▌`}
-      \n\nNew World Group CLI v${packageJson.version}\n\n`
-  );
-};
+      \n\nNew World Group CLI v${packageJson.version}\n\n`;

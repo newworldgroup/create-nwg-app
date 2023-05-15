@@ -8,16 +8,15 @@ const q: QuestionCollection = [
     default: `${process.argv[2] ?? "my-app"}`,
   },
   {
-    type: "list",
+    type: "confirm",
     name: "typescript",
     message: "Use TypeScript?",
-    choices: ["Yes", "No"],
-    default: "Yes",
+    default: true,
   },
   {
     type: "checkbox",
     name: "routes",
-    message: "Which routes do you want to include?",
+    message: "Your app's routes:",
     choices: [
       "Amenities",
       "Availability",
@@ -38,14 +37,15 @@ const q: QuestionCollection = [
   {
     type: "input",
     name: "analytics",
-    message: "What is your Google Analytics tracking ID?",
+    message: "Google Analytics tracking ID?",
     default: "UA-XXXXXXXXX-X",
   },
   {
-    type: "input",
-    name: "gtm",
-    message: "What is your Google Tag Manager ID?",
-    default: "GTM-XXXXXXX",
+    type: "list",
+    name: "cli",
+    message: "CLI?",
+    choices: ["npm", "yarn", "pnpm"],
+    default: 0,
   },
 ];
 
@@ -58,9 +58,11 @@ const q: QuestionCollection = [
  * @todo  Add a prompt for a database
  * @todo  Add a prompt for a backend email service
  * @todo  Add a prompt for a backend SEO service
+ * @todo Integrate a monoreppo flag
+ *
  */
 
-const PROMPT = async (): Promise<Answers> => {
+export const PROMPT = async (): Promise<Answers> => {
   try {
     return await inquirer.prompt(q);
   } catch (error) {
@@ -74,5 +76,3 @@ const PROMPT = async (): Promise<Answers> => {
     };
   }
 };
-
-export { PROMPT };

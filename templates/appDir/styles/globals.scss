@@ -1,0 +1,39 @@
+@use "./base/mixin.scss" as mixin;
+// @import url("https://use.typekit.net/nsp8kav.css"); typekit
+@import "./base/reset.scss";
+
+// Notes
+// use SASS and CSS modules in each component for separatetion of concerns
+// keep globals here such as h1, h2, etc.
+// Ensure heirarchy of SEO content. Use only a single h1 on each page.
+// use semantic HTML such as header, footer, nav, section, etc..
+// use ul li for lists
+// for background images that require cover use object-fit:cover instead of background-size:cover for SEO purposes
+// use Next image components on images
+// add alt tags to images
+// use staging branch
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: atten-new, sans-serif;
+}
+h1 {
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  @include mixin.tablet {
+    font-size: 3rem;
+  }
+}
+p {
+}
+ul li {
+  font-size: 0.7rem;
+  @include mixin.tablet {
+    font-size: 0.8rem;
+  }
+}

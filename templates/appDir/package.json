@@ -1,0 +1,29 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3007",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "20.1.0",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "framer-motion": "^10.12.8",
+    "google-map-react": "^2.2.0",
+    "gsap": "^3.11.5",
+    "html-react-parser": "^3.0.16",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-responsive-masonry": "^2.1.7",
+    "sass": "^1.62.1",
+    "swiper": "^9.2.4",
+    "typescript": "5.0.4"
+  }
+}

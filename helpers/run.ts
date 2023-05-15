@@ -1,7 +1,7 @@
 import { execSync } from "child_process";
 /**
  * @description Run a command in the terminal
- * @param command
+ * @param command The command to run
  * @returns  true if the command was successful, false otherwise
  */
 const RUN = (command: string) => {

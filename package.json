@@ -21,12 +21,12 @@
   "author": "Aite Eboigbe <aeboigbe@newworldgroup.com>",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3",
     "inquirer": "^8.2.5"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
     "@types/node": "^18.16.3",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
   }
 }
